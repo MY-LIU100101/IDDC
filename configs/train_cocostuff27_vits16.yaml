@@ -1,0 +1,37 @@
+
+
+path_datadir: '/storage1/liumingyuan/dataset/cocostuff/'
+experiment_name: "long"
+gpus: '1'
+
+output_root: 'logs/'
+n_classes: 27
+name_dataset: "cocostuff27"
+max_epochs: 20
+iter_display: 50
+seed: 1
+val_mode: 2
+
+lr: 5e-4
+lr_linear_model: 1e-3
+num_workers: 32
+batch_size: 64
+res: 224
+
+model_type: "vit_small"
+arch: "dino"
+dino_patch_size: 16
+dino_feat_type: "feat"
+model_exp: 'vit_small_dino_fixed_nonlinearhead'
+projection_type: "nonlinear"
+dim: 384
+use_fit_model: False
+
+w0: 1.4
+w1: 0.4
+w2: 0.2
+w3: 0.12
+
+
+
+

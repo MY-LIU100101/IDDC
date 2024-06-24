@@ -1,0 +1,43 @@
+gpus: '3'
+path_log: 'logs'
+
+# coco stuff 27 ViT-s8
+load_checkpoint: 'checkpoints/cocostuff27_vits8.pth'
+
+val_mode: 0 # {0: Sliding Window, 1: Resize Ori Scale, 2: Resize Crop Scale}
+n_classes: 27
+
+path_datadir: '/storage1/liumingyuan/dataset/cocostuff/'
+name_dataset: "cocostuff27"
+experiment_name: "exp1"
+mminit: '1k'
+
+# Loader params
+num_workers: 16
+batch_size: 1 #64 # 16
+
+#dataset_name: "cityscapes"
+crop_type: "five"
+crop_ratio: .5
+res: 224 #224
+loader_crop_type: "center"
+
+# Model Params
+extra_clusters: 0
+use_true_labels: False
+use_recalibrator: False
+
+model_type: "vit_small"
+arch: "dino"
+dino_patch_size: 8
+dino_feat_type: "feat"
+model_exp: 'vit_small_dino_fixed_nonlinearhead' #'vit_base_dino_fixed_linearhead'
+
+use_fit_model: False
+projection_type: "nonlinear"
+
+granularity: 1
+continuous: True
+dim: 384 #768
+dropout: True
+
