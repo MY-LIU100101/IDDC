@@ -1,6 +1,6 @@
-# Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation 
+# Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation
 
-(pending completion) This is the official implementation of [Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation](https://link.springer.com/article/10.1007/s11263-024-02083-x)
+This is the official implementation of [Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation](https://link.springer.com/article/10.1007/s11263-024-02083-x)
 
 ## Environment
 The project is implemented using Python 3.7, with environment listed in [requirements.txt](https://github.com/MY-LIU100101/IDDC/blob/main/requirements.txt "requirements.txt")
@@ -9,30 +9,39 @@ The project is implemented using Python 3.7, with environment listed in [require
 ## Data Preparation
 - Download the [training set](http://images.cocodataset.org/zips/train2017.zip) and the [validdation set](http://images.cocodataset.org/zips/val2017.zip) of COCO dataset as well as the [stuffthing map](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip).
 - Unzip these data and place them as the following structure
-- The `curated` directory copies the data split for unsupervised segmentation from [PiCIE](https://github.com/janghyuncho/PiCIE).
+- The `curated` folder copies the data split for unsupervised segmentation from [PiCIE](https://github.com/janghyuncho/PiCIE).
+~~~
+/your/dataset/directory/
+      └── cocostuff/
+            ├── images/
+            │     ├── train2017/
+            │     │       ├── xxxxxxxxx.jpg
+            │     └── val2017/
+            │             ├── xxxxxxxxx.jpg
+            └── annotations/
+            |     ├── train2017/
+            |     │       ├── xxxxxxxxx.png
+            |     ├── val2017/
+            |     │       ├── xxxxxxxxx.png
+            └── curated/
+                  ├── train2017
+                  |       ├── Coco164kFull_Stuff_Coarse_7.txt
+                  └── val2017
+	                      └── Coco164kFull_Stuff_Coarse_7.txt
 
-```text
-cocostuff/
-├── curated
-│   ├── train2017
-│   │   ├── Coco164kFull_Stuff_Coarse_7.txt
-│   ├── val2017
-│   │   ├── Coco164kFull_Stuff_Coarse_7.txt
-├── images
-│   ├── train2017
-│   │   ├── xxxxxxxxx.jpeg
-│   ├── val2017
-│   │   ├── xxxxxxxxx.jpeg
-├── annotations
-│   ├── train2017
-│   │   ├── xxxxxxxxx.png
-│   ├── val2017
-│   │   ├── xxxxxxxxx.png
-
-```
+~~~
 ## Validation
-`bash val_coco320.sh`
+Pretrained checkpoints could be downloaded from the follows. Please put downloaded checkpoints into `checkpoints` folder.
 
+Dataset | Method |Checkpoints (BaiduDisk) | Checkpoints (GoogleDrive) | Acc| mIoU|
+|:------: |:------: |:------:|:------:|:------:|:------: |
+|COCO-Stuff-27|ViT-S/16|[weight](https://pan.baidu.com/s/1zix1_krJnCjuMSMQQhysFA?pwd=8fkh)||59.9%|25.8%|
+|COCO-Stuff-27|ViT-S/8|[weight](https://pan.baidu.com/s/1tuL1dCD2mszdAC2lkRhowQ?pwd=bu24)||58.3%|25.5%|
+
+For validation, please run:
+~~~
+bash val_coco320.sh
+~~~
 ## Training
 
 ## Acknowledgement
