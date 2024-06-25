@@ -1,6 +1,6 @@
-# Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation
+# Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation 
 
-This is the official implementation of [Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation](https://link.springer.com/article/10.1007/s11263-024-02083-x)
+(pending completion) This is the official implementation of [Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation](https://link.springer.com/article/10.1007/s11263-024-02083-x)
 
 ## Environment
 The project is implemented using Python 3.7, with environment listed in [requirements.txt](https://github.com/MY-LIU100101/IDDC/blob/main/requirements.txt "requirements.txt")
