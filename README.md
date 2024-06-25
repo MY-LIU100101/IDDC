@@ -46,7 +46,7 @@ bash val_coco27.sh
 
 ## Acknowledgement
 
-This work benefits a lot from [PiCIE](https://github.com/janghyuncho/PiCIE), and [STEGO](https://github.com/mhamilton723/STEGO).
+This work benefits a lot from [PiCIE](https://github.com/janghyuncho/PiCIE), [MaskContrast](https://github.com/wvangansbeke/Unsupervised-Semantic-Segmentation), and [STEGO](https://github.com/mhamilton723/STEGO).
 
 ## Citation
 ```bibtex
