@@ -35,4 +35,17 @@ cocostuff/
 
 ## Training
 
+## Acknowledgement
 
+This work benefits a lot from [PiCIE](https://github.com/janghyuncho/PiCIE), and [STEGO](https://github.com/mhamilton723/STEGO).
+
+## Citation
+```bibtex
+@article{liu2024imbalance,
+  title={Imbalance-Aware Discriminative Clustering for Unsupervised Semantic Segmentation},
+  author={Liu, Mingyuan and Zhang, Jicong and Tang, Wei},
+  journal={International Journal of Computer Vision},
+  year={2024},
+  publisher={Springer}
+}
+```
