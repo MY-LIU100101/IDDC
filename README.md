@@ -40,7 +40,7 @@ Dataset | Method |Checkpoints (BaiduDisk) | Checkpoints (GoogleDrive) | Acc| mIo
 
 For validation, please run:
 ~~~
-bash val_coco320.sh
+bash val_coco27.sh
 ~~~
 ## Training
 
