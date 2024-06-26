@@ -35,8 +35,8 @@ Pretrained checkpoints could be downloaded from the follows. Please put download
 
 Dataset | Method |Checkpoints (BaiduDisk) | Checkpoints (GoogleDrive) | Acc| mIoU|
 |:------: |:------: |:------:|:------:|:------:|:------: |
-|COCO-Stuff-27|ViT-S/16|[weight](https://pan.baidu.com/s/1zix1_krJnCjuMSMQQhysFA?pwd=8fkh)||59.9%|25.8%|
-|COCO-Stuff-27|ViT-S/8|[weight](https://pan.baidu.com/s/1tuL1dCD2mszdAC2lkRhowQ?pwd=bu24)||58.3%|25.5%|
+|COCO-Stuff-27|ViT-S/16|[weight](https://pan.baidu.com/s/1zix1_krJnCjuMSMQQhysFA?pwd=8fkh)|[weight](https://drive.google.com/file/d/11a_S4t7KbyQJRzKLnhSIoSQ59ykPCxBl/view?usp=sharing)|59.9%|25.8%|
+|COCO-Stuff-27|ViT-S/8|[weight](https://pan.baidu.com/s/1tuL1dCD2mszdAC2lkRhowQ?pwd=bu24)|[weight](https://drive.google.com/file/d/1TNkAyky3903eRRH8OEvrB9EyCKxgNA8w/view?usp=sharing)|58.3%|25.5%|
 
 For validation, please run:
 ~~~
